@@ -1,0 +1,52 @@
+{
+  "jogos": [
+  {
+      "id": 1,
+      "nome": "Diablo 3",
+      "img": "https://static-cdn.jtvnw.net/ttv-boxart/Diablo%20III-285x380.jpg"
+  },{
+      "id": 2,
+      "nome": "CS:GO",
+      "img": "https://static-cdn.jtvnw.net/ttv-boxart/Counter-Strike:%20Global%20Offensive-285x380.jpg"
+  },{
+      "id": 3,
+      "nome": "League of Legends",
+      "img": "https://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends-285x380.jpg"
+  },{
+      "id": 4,
+      "nome": "Valorant",
+      "img": "https://static-cdn.jtvnw.net/ttv-boxart/VALORANT-285x380.jpg"
+  },{
+      "id": 5,
+      "nome": "World of Warcraft",
+      "img": "https://static-cdn.jtvnw.net/ttv-boxart/World%20of%20Warcraft-285x380.jpg"
+  },{
+      "id": 6,
+      "nome": "Valheim",
+      "img": "https://static-cdn.jtvnw.net/ttv-boxart/Valheim-285x380.jpg"
+  },{
+      "id": 7,
+      "nome": "Call of Duty Warzone",
+      "img": "https://static-cdn.jtvnw.net/ttv-boxart/Call%20of%20Duty:%20Warzone-285x380.jpg"
+  },{
+      "id": 8,
+      "nome": "Hearthstone",
+      "img": "https://static-cdn.jtvnw.net/ttv-boxart/Hearthstone-285x380.jpg"
+  },{
+      "id": 9,
+      "nome": "Overwatch",
+      "img": "https://static-cdn.jtvnw.net/ttv-boxart/Overwatch-285x380.jpg"
+  },{
+      "id": 10,
+      "nome": "Dota 2",
+      "img": "https://static-cdn.jtvnw.net/ttv-boxart/Dota%202-285x380.jpg"
+  },{
+      "id": 11,
+      "nome": "GTA V",
+      "img": "https://static-cdn.jtvnw.net/ttv-boxart/Grand%20Theft%20Auto%20V-285x380.jpg"
+  },{
+      "id": 12,
+      "nome": "Black Desert Online",
+      "img": "https://static-cdn.jtvnw.net/ttv-boxart/Black%20Desert%20Online-285x380.jpg"
+  }]
+}
