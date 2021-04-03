@@ -6,7 +6,6 @@ import { IoPerson, IoGameController } from "react-icons/io5";
 const Cabecalho = () => {
     
     return (
-        
         <header className="cabecalho">
             <Link to="/my-games/" className="titulo-cabecalho"><h1>MyGames</h1></Link>
             
