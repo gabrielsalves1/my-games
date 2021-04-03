@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, HashRouter, Route, Switch} from 'react-router-dom';
 import './reset.css';
 import './assets/css/Base.css';
 
@@ -11,7 +11,7 @@ function App() {
   return (
       <Router>
         <Cabecalho />
-        <Switch>
+        <HashRouter>
           <Route exact path="/">
             <Home />
           </Route>
@@ -19,7 +19,7 @@ function App() {
           {/*<Route>
             <Pagina404 />
           </Route>*/}
-        </Switch>
+        </HashRouter>
       </Router>
 
   );
