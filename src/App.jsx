@@ -10,9 +10,9 @@ import Pagina404 from './paginas/Pagina404';
 function App() {
   return (
       <Router>
+        <Cabecalho />
         <Switch>
-          <Cabecalho />
-          <Route exact path="/">
+          <Route exact path="/my-games/">
             <Home />
           </Route>
 
