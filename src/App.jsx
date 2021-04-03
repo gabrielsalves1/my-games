@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, HashRouter, Route, Switch} from 'react-router-dom';
 import './reset.css';
 import './assets/css/Base.css';
 
@@ -11,15 +11,16 @@ function App() {
   return (
       <Router>
         <Cabecalho />
-        <Switch>
-          <Route path exact="/">
+        //Switch substituido pelo HashRouter devido GithubPages não carregar Home
+        <HashRouter>
+          <Route exact path="/">
             <Home />
           </Route>
 
           <Route>
             <Pagina404 />
           </Route>
-        </Switch>
+        </HashRouter>
       </Router>
 
   );
