@@ -11,6 +11,7 @@ function App() {
   return (
       <Router>
         <Switch>
+          <Cabecalho />
           <Route exact path="/">
             <Home />
           </Route>
