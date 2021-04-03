@@ -12,7 +12,7 @@ function App() {
       <Router>
         <Cabecalho />
         <Switch>
-          <Route path exact="/">
+          <Route path="/">
             <Home />
           </Route>
 
