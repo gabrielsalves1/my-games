@@ -8,7 +8,7 @@ const Cabecalho = () => {
     return (
         
         <header className="cabecalho">
-            <Link to="/" className="titulo-cabecalho"><h1>MyGames</h1></Link>
+            <Link to="/home" className="titulo-cabecalho"><h1>MyGames</h1></Link>
             
             <div>
                 <Link to="/favoritos" className="itens">FAVORITOS<IoGameController className="icone-controle"/></Link>
