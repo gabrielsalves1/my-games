@@ -11,7 +11,7 @@ function App() {
   return (
       <Router>
         <Cabecalho />
-        <HashRouter>
+        <Switch>
           <Route exact path="/my-games/">
             <Home />
           </Route>
@@ -19,7 +19,7 @@ function App() {
           <Route>
             <Pagina404 />
           </Route>
-        </HashRouter>
+        </Switch>
       </Router>
 
   );
