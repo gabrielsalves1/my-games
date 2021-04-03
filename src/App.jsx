@@ -11,15 +11,10 @@ function App() {
   return (
       <Router>
         <Cabecalho />
-        <h1>Teste</h1>
         <HashRouter>
           <Route exact path="/">
             <Home />
           </Route>
-
-          {/*<Route>
-            <Pagina404 />
-          </Route>*/}
         </HashRouter>
       </Router>
 
