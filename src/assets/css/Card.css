@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.card {
+    font-family: 'Press Start 2P', cursive;
+    color: #F8F8FF;
+    margin: 2em;
+    display: inline-block;
+}
+
+.card-imagem {
+    width: 10em;
+    height: 15em;
+    overflow: hidden;
+}
+
+.card-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.15em;
+}
+
+.card:hover {
+    transition: transform .5s ease;
+    transform: scale(1.1);
+    cursor: pointer;
+}
