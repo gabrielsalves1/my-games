@@ -9,10 +9,10 @@ const Cabecalho = () => {
         <header className="cabecalho">
             <Link to="/my-games/" className="titulo-cabecalho"><h1>MyGames</h1></Link>
             
-            <div>
+            <nav>
                 <Link to="/favoritos" className="itens">FAVORITOS<IoGameController className="icone-controle"/></Link>
                 <Link to ="#" className="itens"><IoPerson className="icone-login"/></Link>
-            </div>
+            </nav>
 
         </header>
     );

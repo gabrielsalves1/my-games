@@ -7,6 +7,7 @@ import Cabecalho from './components/Cabecalho';
 import Home from './paginas/Home';
 import Pagina404 from './paginas/Pagina404';
 import DetalhesJogo from './paginas/DetalhesJogo';
+import Rodape from './components/Rodape';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Pagina404 />
           </Route>
         </Switch>
+        <Rodape />
       </Router>
 
   );

@@ -18,7 +18,7 @@ const DetalhesJogo = () => {
                 if(jogos.nome === nome) {
                     return <div key={jogos.id} className="noticia">
                         <h1 className="noticia-titulo">{jogos.nome}</h1>
-                        <img src={jogos.img} className="card-imagem" />
+                        <img src={jogos.img} className="card-imagem__detalhes" />
                         <p className="noticia-texto">{jogos.noticia}</p>
                     </div>
                  }

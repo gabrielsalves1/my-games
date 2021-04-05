@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.container-rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1C1C1C;
+    height: 3em;
+}
+
+.texto-rodape {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.6em;
+    color: #F8F8FF;
+}
+
+.icones-rodape {
+    text-decoration: none;
+    font-size: 2em;
+    margin: 0 0.2em;
+    color: #F8F8FF;
+}
+
+.icones-rodape:hover {
+    transition: transform .5s ease;
+    transform: scale(1.1);
+}
