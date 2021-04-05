@@ -1,13 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
+import { buscaApi } from '../api/api';
 
-const DetalhesJogo = ({nomeJogo}) => {
+import '../assets/css/DetalhesJogo.css';
+
+const DetalhesJogo = () => {
     const { nome } = useParams();
+    const [jogosCard, setJogosCard] = useState([]);
 
+    useEffect(() => {
+        buscaApi(`/jogos`, setJogosCard)
+    }, [])
+    
     return (
-        <div>
-            <h1>Teste</h1>
-        </div>
+        <main className="container">
+             {jogosCard.map((jogos) => {
+                if(jogos.nome === nome) {
+                    return <div key={jogos.id} className="noticia">
+                        <h1 className="noticia-titulo">{jogos.nome}</h1>
+                        <img src={jogos.img} className="card-imagem" />
+                        <p className="noticia-texto">{jogos.noticia}</p>
+                    </div>
+                 }
+            })}
+        </main>
     );
 }
 

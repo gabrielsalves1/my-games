@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/css/Base.css';
+
 
 const Pagina404 = () => {
     return (
