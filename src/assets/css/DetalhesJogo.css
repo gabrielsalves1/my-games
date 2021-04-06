@@ -17,7 +17,7 @@
     font-family: 'Courier New', Courier, monospace;
     color: #F8F8FF;
     display: inline;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 .card-imagem__detalhes {
@@ -26,4 +26,35 @@
     width: 10em;
     height: 15em;
     margin: 0 1em;
+}
+
+.card-imagem__principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50em;
+    height: 30em;
+    margin: 2em auto;
+    border: 1px solid  #F8F8FF;
+}
+
+.curtir {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.icone-like {
+    font-size: 1em;
+    padding: 0.3em;
+    border-radius: 0.5em;
+    border: 1px solid #F8F8FF;
+    width: 4em;
+    cursor: pointer;
+}
+
+.icone-like:hover {
+    transition: transform .5s ease;
+    transform: scale(1.05);
 }
