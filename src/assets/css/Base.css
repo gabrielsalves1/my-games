@@ -2,6 +2,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #2E2E2E;
+	background: linear-gradient(170deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9192051820728291) 34%, rgba(45,45,45,0.9528186274509804) 81%, rgba(69,69,69,0.9051995798319328) 100%), url('../img/classic-games.jpg');
+	background-position: center;
 	height: 100%;
 }

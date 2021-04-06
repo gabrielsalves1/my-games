@@ -8,7 +8,7 @@ const Rodape = () => {
         <div className="container-rodape">
             <h2 className="texto-rodape">Aplicação desenvolvida por Gabriel Silva Alves</h2>
             <a href="https://www.linkedin.com/in/gabrielsalves1/" className="icones-rodape"><IoLogoLinkedin></IoLogoLinkedin></a>
-            <a href="https://www.linkedin.com/in/gabrielsalves1/" className="icones-rodape"><IoLogoGithub></IoLogoGithub></a>
+            <a href="https://github.com/gabrielsalves1" className="icones-rodape"><IoLogoGithub></IoLogoGithub></a>
         </div>
     );
 }

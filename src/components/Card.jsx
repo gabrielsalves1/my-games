@@ -12,7 +12,7 @@ const Card = () => {
     return (
         <section>
             {jogosCard.map((jogos) => (
-                <Link to={`my-games/${jogos.nome}`} className="card">
+                <Link to={`/${jogos.nome}`} className="card">
                 <div key={jogos.id}>
                     <h1 className="card-titulo">{jogos.nome}</h1>
                     <img src={jogos.img} className="card-imagem" />

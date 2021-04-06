@@ -14,11 +14,11 @@ function App() {
       <Router>
         <Cabecalho />
         <Switch>
-          <Route exact path="/my-games/">
+          <Route exact path="/">
             <Home />
           </Route>
 
-          <Route exact path="/my-games/:nome">
+          <Route exact path="/:nome">
             <DetalhesJogo />
           </Route>
 
