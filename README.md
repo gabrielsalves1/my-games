@@ -1,6 +1,3 @@
-# Projeto Github Pages
-
-https://gabrielsalves1.github.io/my-games/
 
 # Getting Started with Create React App
 
