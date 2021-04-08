@@ -5,7 +5,7 @@ import { IoThumbsUp } from "react-icons/io5";
 
 import '../assets/css/DetalhesJogo.css';
 
-const NoticiasJogo = () => {
+const NoticiasJogo = (props) => {
     const { nome } = useParams();
     const [jogosCard, setJogosCard] = useState([]);
 
@@ -23,12 +23,22 @@ const NoticiasJogo = () => {
                         <p className="noticia-texto">{jogos.noticia}</p>
                         <img src={jogos.img2} className="card-imagem__principal" />
                         
-                        <div className="curtir"><span className="noticia-texto">Gostou da notícia sobre {jogos.nome}? Adicione aos favoritos para ver mais notícias! <IoThumbsUp className="icone-like"></IoThumbsUp></span></div>
+                        <div className="curtir" >
+                            <span className="noticia-texto">Gostou da notícia sobre {jogos.nome}? Adicione aos favoritos para ver mais notícias! 
+                                <IoThumbsUp className="icone-like" onClick={() => handleFavoritos(props.favoritos, jogos.nome)} ></IoThumbsUp>
+                            </span>
+                        </div>
                     </div>
                  }
             })}
         </main>
     );
+
+    function handleFavoritos(favoritos, nomeJogo){
+        const novoFavorito = [...favoritos, nomeJogo];
+        props.setFavoritos(novoFavorito);
+    }
+
 }
 
 export default NoticiasJogo;

@@ -2,10 +2,10 @@ import React from 'react';
 
 import NoticiasJogo from '../components/NoticiasJogo';
 
-const DetalhesJogo = () => {
+const DetalhesJogo = (props) => {
     
     return (
-        <NoticiasJogo />
+        <NoticiasJogo favoritos={props.favoritos} setFavoritos={props.setFavoritos} />
     );
 }
 

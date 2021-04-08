@@ -1,7 +1,6 @@
 import React from 'react';
 import '../assets/css/Rodape.css';
 import { IoLogoLinkedin, IoLogoGithub } from "react-icons/io5";
-import { Link } from 'react-router-dom';
 
 const Rodape = () => {
     return (
