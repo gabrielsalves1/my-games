@@ -38,6 +38,16 @@
     border: 1px solid  #F8F8FF;
 }
 
+.card-imagem__detalhes:hover {
+    transition: transform .5s ease;
+    transform: scale(1.01);
+}
+
+.card-imagem__principal:hover {
+    transition: transform .5s ease;
+    transform: scale(1.01);
+}
+
 .curtir {
     display: flex;
     justify-content: center;
@@ -50,6 +60,7 @@
     padding: 0.3em;
     border-radius: 0.5em;
     border: 1px solid #F8F8FF;
+    background-color: #1C1C1C;
     width: 4em;
     cursor: pointer;
 }
