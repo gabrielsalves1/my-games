@@ -25,7 +25,7 @@ function App() {
           
           <Route exact path="/" component={Home} />
 
-          <Route exact path="/:nome" component={DetalhesJogo} favoritos={favoritos} setFavoritos={setFavoritos} />
+          <Route exact path="/games/:nome" component={DetalhesJogo} favoritos={favoritos} setFavoritos={setFavoritos} />
 
           <Route exact path="/favoritos" component={PaginaFavoritos} />
 
