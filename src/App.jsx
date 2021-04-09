@@ -8,6 +8,7 @@ import Home from './paginas/Home';
 import Pagina404 from './paginas/Pagina404';
 import DetalhesJogo from './paginas/DetalhesJogo';
 import Rodape from './components/Rodape';
+import PaginaFavoritos from './paginas/PaginaFavoritos';
 
 function App() {
   const [favoritos, setFavoritos] = useState([]);
@@ -18,21 +19,21 @@ function App() {
 
   return (
       <Router>
+
         <Cabecalho />
         <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
+          
+          <Route exact path="/" component={Home} />
 
-          <Route exact path="/:nome">
-            <DetalhesJogo favoritos={favoritos} setFavoritos={setFavoritos} />
-          </Route>
+          <Route exact path="/:nome" component={DetalhesJogo} favoritos={favoritos} setFavoritos={setFavoritos} />
 
-          <Route>
-            <Pagina404 />
-          </Route>
+          <Route exact path="/favoritos" component={PaginaFavoritos} />
+
+          <Route component={Pagina404} />
+          
         </Switch>
         <Rodape />
+        
       </Router>
 
   );

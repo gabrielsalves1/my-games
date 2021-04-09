@@ -10,7 +10,7 @@ const Cabecalho = () => {
             <Link to="/" className="titulo-cabecalho"><h1>MyGames</h1></Link>
             
             <nav>
-                <Link to="/favoritos" className="itens">FAVORITOS<IoGameController className="icone-controle"/></Link>
+                <Link to="/favoritos" className="itens"><IoGameController className="icone-controle"/></Link>
                 <Link to ="#" className="itens"><IoPerson className="icone-login"/></Link>
             </nav>
 

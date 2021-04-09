@@ -17,7 +17,8 @@
     font-family: 'Courier New', Courier, monospace;
     color: #F8F8FF;
     display: inline;
-    font-size: 1.3em;
+    font-size: 1.1em;
+    margin: 0.5em 0.5em;
 }
 
 .card-imagem__detalhes {
@@ -53,6 +54,11 @@
     justify-content: center;
     align-items: center;
     margin: auto;
+    width: 60%;
+    height: 50%;
+    border: 1px solid #F8F8FF;
+    border-radius: 1em;
+    background-color: #1C1C1C;
 }
 
 .icone-like {
@@ -60,9 +66,9 @@
     padding: 0.3em;
     border-radius: 0.5em;
     border: 1px solid #F8F8FF;
-    background-color: #1C1C1C;
+    background-color: #696969;
     margin: 0 0.5em;
-    width: 4em;
+    width: 3em;
     cursor: pointer;
 }
 
