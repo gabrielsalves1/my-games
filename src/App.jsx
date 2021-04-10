@@ -29,7 +29,9 @@ function App() {
             <DetalhesJogo favoritos={favoritos} setFavoritos={setFavoritos} />
           </Route>
 
-          <Route exact path="/favoritos" component={PaginaFavoritos} />
+          <Route exact path="/favoritos">
+            <PaginaFavoritos favoritos={favoritos}/>
+          </Route>
 
           <Route component={Pagina404} />
           

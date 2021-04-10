@@ -1,14 +1,11 @@
 import React from 'react';
 import '../assets/css/DetalhesJogo.css'
 
-const PaginaFavoritos = () => {
+import Favoritos from '../components/Favoritos';
+
+const PaginaFavoritos = (props) => {
     return (
-        <main className="container">
-            <div className="noticia">
-                <h1 className="noticia-titulo">Teste</h1>
-                <p>FWNKJANFOWAMONFWNKJANFOWAMONFWNKJANFOWAMONFWNKJANFOWAMONFWNKJANFOWAMONFWNKJANFOWAMONFWNKJANFOWAMONFWNKJANFOWAMONFWNKJANFOWAMONFWNKJANFOWAMONFWNKJANFOWAMONFWNKJANFOWAMON</p>
-            </div>
-        </main>
+        <Favoritos favoritos={props.favoritos} />
     );
 } 
 
