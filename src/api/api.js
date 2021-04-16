@@ -1,10 +1,11 @@
 import axios from 'axios';
 
 export const api = axios.create({
-    baseURL: 'http://localhost:5000'
+    baseURL: 'https://api-my-games.herokuapp.com/'
 })
 
 export const buscaApi = async(url, setDado) => {
     const resposta = await api.get(url);
-    setDado(resposta.data);
+    setDado(resposta.data["jogos"]);
+    console.log(resposta.data["jogos"]);
 }

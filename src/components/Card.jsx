@@ -7,8 +7,9 @@ const Card = () => {
     const [jogosCard, setJogosCard] = useState([]);
 
     useEffect(() => {
-        buscaApi(`/jogos`, setJogosCard)
+        buscaApi(`/jogos`, setJogosCard);
     }, [])
+
     return (
         <section>
             {jogosCard.map((jogos) => (
