@@ -25,7 +25,8 @@ const NoticiasJogo = (props) => {
                         
                         <div className="curtir" >
                             <span className="noticia-texto">Gostou da notícia sobre {jogos.nome}? Adicione aos favoritos para ver mais notícias! 
-                                <IoThumbsUp className="icone-like" onClick={() => handleFavoritos(props.favoritos, jogos.id)} ></IoThumbsUp>
+                                <IoThumbsUp className="icone-like" onClick={() => 
+                                    handleFavoritos(props.favoritos, jogos.id, jogos.nome)} ></IoThumbsUp>
                             </span>
                         </div>
                     </div>
@@ -34,9 +35,10 @@ const NoticiasJogo = (props) => {
         </main>
     );
 
-    function handleFavoritos(favoritos, idJogo){
+    function handleFavoritos(favoritos, idJogo, nomeJogo){
         const novoFavorito = [...favoritos, idJogo];
         props.setFavoritos(novoFavorito);
+        alert(`${nomeJogo} adicionado aos favoritos!`);
     }
 
 }
